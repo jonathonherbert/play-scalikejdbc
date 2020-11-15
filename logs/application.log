@@ -1,0 +1,2365 @@
+2020-11-15 00:19:55 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: relation "rules" does not exist
+  Position: 13):
+
+   insert into rules(name, description) values ('A name', 'A description')
+
+2020-11-15 00:19:55 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: relation "rules" does not exist
+  Position: 13):
+
+   insert into rules(name, description) values ('A name', 'A description')
+
+2020-11-15 00:19:55 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: relation "rules" does not exist
+  Position: 13):
+
+   insert into rules(name, description) values ('A name', 'A description')
+
+2020-11-15 00:19:55 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: relation "rules" does not exist
+  Position: 13):
+
+   insert into rules(name, description) values ('A name', 'A description')
+
+2020-11-15 00:19:55 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: relation "rules" does not exist
+  Position: 13):
+
+   insert into rules(name, description) values ('A name', 'A description')
+
+2020-11-15 00:19:55 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: relation "rules" does not exist
+  Position: 13):
+
+   insert into rules(name, description) values ('A name', 'A description')
+
+2020-11-15 00:19:55 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: relation "rules" does not exist
+  Position: 13):
+
+   insert into rules(name, description) values ('A name', 'A description')
+
+2020-11-15 00:19:55 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: relation "rules" does not exist
+  Position: 13):
+
+   insert into rules(name, description) values ('A name', 'A description')
+
+2020-11-15 00:19:55 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: relation "rules" does not exist
+  Position: 13):
+
+   insert into rules(name, description) values ('A name', 'A description')
+
+2020-11-15 00:19:55 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: relation "rules" does not exist
+  Position: 13):
+
+   insert into rules(name, description) values ('A name', 'A description')
+
+2020-11-15 00:20:28 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id is null and r.name = 'MyString' and r.description = 'MyString'; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:44)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:22)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:9)
+    ...
+
+2020-11-15 00:20:28 [31mWARN [0;39m [36mscalikejdbc.ActiveSession[0;39m [35m[0;39m Failed to get generated key value via index 1. Going to retrieve it via index 1.
+2020-11-15 00:20:28 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 75):
+
+   update rule set rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce', name = 'New name!', description = 'desc' where rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce' and name = 'New name!' and description = 'desc'
+
+2020-11-15 00:20:28 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 34):
+
+   delete from rule where rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce' and name = 'name' and description = 'desc'
+
+2020-11-15 00:20:28 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 34):
+
+   delete from rule where rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce' and name = 'name' and description = 'desc'
+
+2020-11-15 00:22:50 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id is null and r.name = 'MyString' and r.description = 'MyString'; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:44)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:22)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:9)
+    ...
+
+2020-11-15 00:22:50 [31mWARN [0;39m [36mscalikejdbc.ActiveSession[0;39m [35m[0;39m Failed to get generated key value via index 1. Going to retrieve it via index 1.
+2020-11-15 00:22:50 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 61):
+
+   update rule set name = 'New name!', description = 'desc' where rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce'
+
+2020-11-15 00:22:50 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 34):
+
+   delete from rule where rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce' and name = 'name' and description = 'desc'
+
+2020-11-15 00:22:50 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 34):
+
+   delete from rule where rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce' and name = 'name' and description = 'desc'
+
+2020-11-15 00:24:04 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id is null and r.name = 'MyString' and r.description = 'MyString'; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:44)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:22)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:9)
+    ...
+
+2020-11-15 00:24:05 [31mWARN [0;39m [36mscalikejdbc.ActiveSession[0;39m [35m[0;39m Failed to get generated key value via index 1. Going to retrieve it via index 1.
+2020-11-15 00:24:05 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 61):
+
+   update rule set name = 'New name!', description = 'desc' where rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce'
+
+2020-11-15 00:24:05 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 34):
+
+   delete from rule where rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce' and name = 'name' and description = 'desc'
+
+2020-11-15 00:24:05 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 34):
+
+   delete from rule where rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce' and name = 'name' and description = 'desc'
+
+2020-11-15 00:24:22 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 102):
+
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = '3968f85a-d9ce-4bd8-b67f-64633a58d1c1' and r.name = 'MyString' and r.description = 'MyString'
+
+2020-11-15 00:24:22 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id is null; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.findBy(DBRule.scala:64)
+    db.AnotherFlatSpec.$anonfun$new$2(DBRuleSpec.scala:26)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:9)
+    ...
+
+2020-11-15 00:24:22 [31mWARN [0;39m [36mscalikejdbc.ActiveSession[0;39m [35m[0;39m Failed to get generated key value via index 1. Going to retrieve it via index 1.
+2020-11-15 00:24:22 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 61):
+
+   update rule set name = 'New name!', description = 'desc' where rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce'
+
+2020-11-15 00:24:22 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 34):
+
+   delete from rule where rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce' and name = 'name' and description = 'desc'
+
+2020-11-15 00:24:23 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 34):
+
+   delete from rule where rule_id = 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce' and name = 'name' and description = 'desc'
+
+2020-11-15 00:26:53 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 102):
+
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = '3968f85a-d9ce-4bd8-b67f-64633a58d1c1' and r.name = 'MyString' and r.description = 'MyString'
+
+2020-11-15 00:39:49 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 102):
+
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = '3968f85a-d9ce-4bd8-b67f-64633a58d1c1' and r.name = 'MyString' and r.description = 'MyString'
+
+2020-11-15 00:40:43 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 102):
+
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = '3968f85a-d9ce-4bd8-b67f-64633a58d1c1' and r.name = 'MyString' and r.description = 'MyString'
+
+2020-11-15 00:42:31 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 102):
+
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1 and r.name = 'MyString' and r.description = 'MyString'
+
+2020-11-15 00:42:58 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 102):
+
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1 and r.name = 'MyString' and r.description = 'MyString'
+
+2020-11-15 00:44:55 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1 and r.name = 'MyString' and r.description = 'MyString'; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:49)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:45:33 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:47:51 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:47:58 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:48:14 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:49:38 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:49:43 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:49:55 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:50:13 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:50:13 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: operator does not exist: uuid = character varying
+  Hint: No operator matches the given name and argument type(s). You might need to add explicit type casts.
+  Position: 102):
+
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = '3968f85a-d9ce-4bd8-b67f-64633a58d1c1'
+
+2020-11-15 00:51:21 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:51:27 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:51:32 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:51:35 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:51:50 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:51:58 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:52:08 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 00:52:08 [31mWARN [0;39m [36mscalikejdbc.ActiveSession[0;39m [35m[0;39m Failed to get generated key value via index 1. Going to retrieve it via index 1.
+2020-11-15 01:02:16 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 01:02:44 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 01:03:00 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 01:03:12 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 01:04:07 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 01:04:15 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 01:04:29 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:37:51 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (12 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:37:51 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (1, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:38:46 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:38:46 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (2, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:39:11 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:39:11 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (3, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:39:13 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:39:14 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (4, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:39:16 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:39:16 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (5, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:39:19 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:39:19 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (6, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:39:28 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:39:28 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into rule values ('3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'A name', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.AnotherFlatSpec.fixture(DBRuleSpec.scala:17)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.AnotherFlatSpec.withFixture(DBRuleSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 11:39:28 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.name = 'A name'; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.findBy(DBRule.scala:65)
+    db.AnotherFlatSpec.$anonfun$new$2(DBRuleSpec.scala:27)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:39:28 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into rule( rule_id, name, description ) values ( d1e6271f-08e6-45e1-86f8-57fdb9ed80ce, 'name', 'desc' );
+   insert into rule( rule_id, name, description ) values ( 3968f85a-d9ce-4bd8-b67f-64633a58d1c1, 'A name', 'A description' ); (5 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.batchInsert(DBRule.scala:115)
+    db.AnotherFlatSpec.$anonfun$new$10(DBRuleSpec.scala:68)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:39:28 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (7, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:39:31 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (10 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:39:31 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into rule( rule_id, name, description ) values ( d1e6271f-08e6-45e1-86f8-57fdb9ed80ce, 'name', 'desc' );
+   insert into rule( rule_id, name, description ) values ( 3968f85a-d9ce-4bd8-b67f-64633a58d1c1, 'A name', 'A description' ); (5 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.batchInsert(DBRule.scala:115)
+    db.AnotherFlatSpec.$anonfun$new$10(DBRuleSpec.scala:68)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:39:31 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (8, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:39:35 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:39:35 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (9, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:40:42 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:40:42 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: invalid input syntax for integer: "3968f85a-d9ce-4bd8-b67f-64633a58d1c1"
+  Position: 30):
+
+   insert into feedback values ('3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'A name', 'A description')
+
+2020-11-15 11:40:42 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: invalid input syntax for integer: "3968f85a-d9ce-4bd8-b67f-64633a58d1c1"
+  Position: 30):
+
+   insert into feedback values ('3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'A name', 'A description')
+
+2020-11-15 11:40:42 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: invalid input syntax for integer: "3968f85a-d9ce-4bd8-b67f-64633a58d1c1"
+  Position: 30):
+
+   insert into feedback values ('3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'A name', 'A description')
+
+2020-11-15 11:40:42 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: invalid input syntax for integer: "3968f85a-d9ce-4bd8-b67f-64633a58d1c1"
+  Position: 30):
+
+   insert into feedback values ('3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'A name', 'A description')
+
+2020-11-15 11:40:42 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: invalid input syntax for integer: "3968f85a-d9ce-4bd8-b67f-64633a58d1c1"
+  Position: 30):
+
+   insert into feedback values ('3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'A name', 'A description')
+
+2020-11-15 11:40:42 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: invalid input syntax for integer: "3968f85a-d9ce-4bd8-b67f-64633a58d1c1"
+  Position: 30):
+
+   insert into feedback values ('3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'A name', 'A description')
+
+2020-11-15 11:40:42 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: invalid input syntax for integer: "3968f85a-d9ce-4bd8-b67f-64633a58d1c1"
+  Position: 30):
+
+   insert into feedback values ('3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'A name', 'A description')
+
+2020-11-15 11:40:42 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: invalid input syntax for integer: "3968f85a-d9ce-4bd8-b67f-64633a58d1c1"
+  Position: 30):
+
+   insert into feedback values ('3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'A name', 'A description')
+
+2020-11-15 11:40:42 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: invalid input syntax for integer: "3968f85a-d9ce-4bd8-b67f-64633a58d1c1"
+  Position: 30):
+
+   insert into feedback values ('3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'A name', 'A description')
+
+2020-11-15 11:40:42 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: invalid input syntax for integer: "3968f85a-d9ce-4bd8-b67f-64633a58d1c1"
+  Position: 30):
+
+   insert into feedback values ('3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'A name', 'A description')
+
+2020-11-15 11:41:08 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:41:08 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (17, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:41:19 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:41:19 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (29, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:43:19 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:43:19 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (41, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:43:27 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:43:27 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (53, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:43:39 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:43:40 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (65, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:44:41 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:44:41 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (70, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:44:49 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (9 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:44:49 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (72, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:45:11 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (11 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:45:12 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (74, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:45:14 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:45:14 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: null value in column "rule_id" violates not-null constraint
+  Detail: Failing row contains (76, null, MyString, null).):
+
+   insert into feedback ( rule_id, email, description ) values ( null, 'MyString', null )
+
+2020-11-15 11:45:43 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:45:44 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: column "rule_id" is of type uuid but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 108):
+
+   insert into feedback ( rule_id, email, description ) values ( 'another uuid', 'MyString', null )
+
+2020-11-15 11:46:36 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:46:37 [1;31mERROR[0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution failed (Reason: ERROR: column "rule_id" is of type uuid but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 108):
+
+   insert into feedback ( rule_id, email, description ) values ( 'd1e6271f-08e6-45e1-86f8-57fdb9ed80ce', 'MyString', null )
+
+2020-11-15 11:49:07 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:52:03 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:52:22 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.AnotherFlatSpec.$anonfun$new$1(DBRuleSpec.scala:23)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.AnotherFlatSpec.using(DBRuleSpec.scala:10)
+    ...
+
+2020-11-15 11:53:07 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.DBRuleSpec.$anonfun$new$1(DBRuleSpec.scala:30)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBRuleSpec.using(DBRuleSpec.scala:11)
+    ...
+
+2020-11-15 11:53:07 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into rule( rule_id, name, description ) values ( d1e6271f-08e6-45e1-86f8-57fdb9ed80ce, 'name', 'desc' );
+   insert into rule( rule_id, name, description ) values ( 3968f85a-d9ce-4bd8-b67f-64633a58d1c1, 'A name', 'A description' ); (5 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.batchInsert(DBRule.scala:115)
+    db.DBRuleSpec.$anonfun$new$10(DBRuleSpec.scala:76)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBRuleSpec.using(DBRuleSpec.scala:11)
+    ...
+
+2020-11-15 11:53:44 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:45)
+    db.DBRuleSpec.$anonfun$new$1(DBRuleSpec.scala:30)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBRuleSpec.using(DBRuleSpec.scala:11)
+    ...
+
+2020-11-15 11:53:59 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 11:54:36 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 11:54:47 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 11:54:50 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 11:54:51 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   update rule set name = 'New name!', description = 'desc' where rule_id = d1e6271f-08e6-45e1-86f8-57fdb9ed80ce; (5 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.save(DBRule.scala:141)
+    db.DBRuleSpec.$anonfun$new$9(DBRuleSpec.scala:66)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBRuleSpec.using(DBRuleSpec.scala:11)
+    ...
+
+2020-11-15 11:56:52 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 11:56:54 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (6 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 11:59:41 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 11:59:49 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 11:59:49 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select f.id as i_on_f, f.rule_id as ri_on_f, f.email as e_on_f, f.description as d_on_f from feedback f where f.id = 1; (6 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedback$.find(DBFeedback.scala:55)
+    db.DBFeedbackSpec.$anonfun$new$9(DBFeedbackSpec.scala:64)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    ...
+
+2020-11-15 12:00:34 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (6 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 12:01:25 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 12:02:28 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = 3968f85a-d9ce-4bd8-b67f-64633a58d1c1; (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:47)
+    db.DBRuleSpec.$anonfun$new$1(DBRuleSpec.scala:27)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBRuleSpec.using(DBRuleSpec.scala:11)
+    ...
+
+2020-11-15 12:02:39 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 12:02:57 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (6 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 12:03:08 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 12:03:15 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 15:23:56 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 15:24:08 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 15:24:11 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 15:24:31 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 15:24:49 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 15:24:56 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (8 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 15:24:59 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
+2020-11-15 15:25:00 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   select r.rule_id as ri_on_r, r.name as n_on_r, r.description as d_on_r from rule r where r.rule_id = d1e6271f-08e6-45e1-86f8-57fdb9ed80ce; (6 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.find(DBRule.scala:47)
+    db.DBRuleSpec.$anonfun$new$10(DBRuleSpec.scala:77)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBRuleSpec.using(DBRuleSpec.scala:11)
+    ...
+
+2020-11-15 15:25:00 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into rule( rule_id, name, description ) values ( d1e6271f-08e6-45e1-86f8-57fdb9ed80ce, 'name', 'desc' );
+   insert into rule( rule_id, name, description ) values ( 3968f85a-d9ce-4bd8-b67f-64633a58d1c1, 'A name', 'A description' ); (5 ms)
+
+  [Stack Trace]
+    ...
+    db.DBRule$.batchInsert(DBRule.scala:135)
+    db.DBRuleSpec.$anonfun$new$11(DBRuleSpec.scala:83)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.$anonfun$apply$1(FixtureTestSuite.scala:275)
+    org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+    org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+    org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+    org.scalatest.FixtureTestSuite$TestFunAndConfigMap.apply(FixtureTestSuite.scala:275)
+    org.scalatest.FixtureTestSuite$OneArgTest$$anon$1.apply(FixtureTestSuite.scala:223)
+    org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+    org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+    org.scalatest.flatspec.FixtureAnyFlatSpec.withFixture(FixtureAnyFlatSpec.scala:226)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:62)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBRuleSpec.using(DBRuleSpec.scala:11)
+    ...
+
+2020-11-15 15:32:30 [31mWARN [0;39m [36ms.StatementExecutor$$anon$1[0;39m [35m[0;39m SQL execution completed
+
+  [SQL Execution]
+   insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description'); (7 ms)
+
+  [Stack Trace]
+    ...
+    db.DBFeedbackSpec.fixture(DBFeedbackSpec.scala:20)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2(AutoRollback.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$2$adapted(AutoRollback.scala:59)
+    scalikejdbc.DBConnection.withinTx(DBConnection.scala:277)
+    scalikejdbc.DBConnection.withinTx$(DBConnection.scala:276)
+    scalikejdbc.DB.withinTx(DB.scala:60)
+    scalikejdbc.scalatest.AutoRollback.$anonfun$withFixture$1(AutoRollback.scala:59)
+    scalikejdbc.LoanPattern.using(LoanPattern.scala:22)
+    scalikejdbc.LoanPattern.using$(LoanPattern.scala:20)
+    db.DBFeedbackSpec.using(DBFeedbackSpec.scala:10)
+    scalikejdbc.scalatest.AutoRollback.withFixture(AutoRollback.scala:56)
+    scalikejdbc.scalatest.AutoRollback.withFixture$(AutoRollback.scala:55)
+    db.DBFeedbackSpec.withFixture(DBFeedbackSpec.scala:10)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.invokeWithFixture$1(FixtureAnyFlatSpecLike.scala:2128)
+    org.scalatest.flatspec.FixtureAnyFlatSpecLike.$anonfun$runTest$1(FixtureAnyFlatSpecLike.scala:2139)
+    ...
+
