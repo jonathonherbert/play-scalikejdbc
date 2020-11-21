@@ -4,13 +4,17 @@ import scalikejdbc._
 import scalikejdbc.config._
 import scalikejdbc.scalatest.AutoRollback
 import org.scalatest.fixture.FlatSpec
-import org.scalatest.Matchers
+import org.scalatest.matchers.should.Matchers
 import java.util.UUID
 import org.scalatest.flatspec.FixtureAnyFlatSpec
+import com.whisk.docker.scalatest.DockerTestKit
 
-class DBRuleSpec extends FixtureAnyFlatSpec with Matchers with AutoRollback {
-
-  DBs.setupAll()
+class DBRuleSpec
+    extends FixtureAnyFlatSpec
+    with Matchers
+    with AutoRollback
+    with DBService
+      with DBEvolutions {
 
   val r = DBRule.syntax("r")
 
@@ -33,7 +37,9 @@ class DBRuleSpec extends FixtureAnyFlatSpec with Matchers with AutoRollback {
 
   it should "find by primary keys with feedback" in { implicit session =>
     val maybeFound =
-      DBRule.findWithFeedback(UUID.fromString("3968f85a-d9ce-4bd8-b67f-64633a58d1c1"))
+      DBRule.findWithFeedback(
+        UUID.fromString("3968f85a-d9ce-4bd8-b67f-64633a58d1c1")
+      )
     maybeFound.isDefined shouldBe true
     maybeFound.get.feedback.size should be > 0
   }

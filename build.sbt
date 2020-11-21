@@ -13,13 +13,17 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
+  jdbc,
+  evolutions,
   "org.postgresql" % "postgresql" % "42.2.5",
   "org.scalikejdbc" %% "scalikejdbc" % scalikejdbcVersion,
   "org.scalikejdbc" %% "scalikejdbc-config" % scalikejdbcVersion,
   "org.scalikejdbc" %% "scalikejdbc-play-initializer" % scalikejdbcPlayVersion,
   "org.scalikejdbc" %% "scalikejdbc-test" % "3.5.0" % Test,
   "org.scalatestplus.play" %% "scalatestplus-play" % "5.1.0" % Test,
-  "org.skinny-framework" %% "skinny-orm" % "3.1.0"
+  "org.skinny-framework" %% "skinny-orm" % "3.1.0",
+  "com.whisk" %% "docker-testkit-scalatest" % "0.9.9" % "test",
+  "com.whisk" %% "docker-testkit-impl-spotify" % "0.9.9" % "test"
 )
 
 enablePlugins(PlayScala)

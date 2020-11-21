@@ -6,16 +6,17 @@ import scalikejdbc.scalatest.AutoRollback
 import scalikejdbc._
 import java.util.UUID
 import scalikejdbc.config.DBs
+import com.whisk.docker.scalatest.DockerTestKit
 
 class DBFeedbackSpec
     extends FixtureAnyFlatSpec
     with Matchers
-    with AutoRollback {
-
-  DBs.setupAll()
+    with AutoRollback
+    with DBService
+    with DBEvolutions {
 
   override def fixture(implicit session: DBSession) = {
-    sql"insert into feedback(id, rule_id, email, description) values (1, '3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description')"
+    sql"insert into feedback(rule_id, email, description) values ('3968f85a-d9ce-4bd8-b67f-64633a58d1c1', 'example@test.com', 'A description')"
       .updateAndReturnGeneratedKey()
       .apply()
   }
@@ -47,7 +48,10 @@ class DBFeedbackSpec
     count should be > (0L)
   }
   it should "create new record" in { implicit session =>
-    val created = DBFeedback.create(ruleId = UUID.fromString("d1e6271f-08e6-45e1-86f8-57fdb9ed80ce"), email = "MyString")
+    val created = DBFeedback.create(
+      ruleId = UUID.fromString("d1e6271f-08e6-45e1-86f8-57fdb9ed80ce"),
+      email = "MyString"
+    )
     created should not be (null)
   }
   it should "save a record" in { implicit session =>
